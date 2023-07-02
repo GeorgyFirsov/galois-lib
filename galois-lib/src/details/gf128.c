@@ -2,7 +2,6 @@
  * @file gf128.c
  * @author Georgy Firsov (gfirsov007@gmail.com)
  * @brief Finite field of size 2 ^ 128 multiplication
- * @version 1.0
  * @date 2023-07-02
  * 
  * @copyright Copyright (c) 2023

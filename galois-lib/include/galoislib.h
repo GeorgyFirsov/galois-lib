@@ -2,7 +2,6 @@
  * @file galoislib.h
  * @author Georgy Firsov (gfirsov007@gmail.com)
  * @brief Main library header
- * @version 1.0
  * @date 2023-07-02
  * 
  * @copyright Copyright (c) 2023
