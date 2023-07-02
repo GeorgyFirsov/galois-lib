@@ -21,7 +21,7 @@ jobs:
                 submodules: 'recursive'
             
             - name: Configure Doxygen with CMake
-              run: cmake . -DGALOISLIB_DOCS_ONLY=ON -DGALOISLIB_GITHUB_DOCS=ON -DGALOISLIB_PRETTY_DOCS=ON
+              run: cmake . -DGALOISLIB_GENERATE_DOCS=ON -DGALOISLIB_DOCS_ONLY=ON -DGALOISLIB_GITHUB_DOCS=ON -DGALOISLIB_PRETTY_DOCS=ON
 
             - name: Generate documentation
               run: doxygen docs/Doxyfile
