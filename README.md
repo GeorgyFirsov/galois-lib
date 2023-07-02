@@ -5,7 +5,7 @@ This library implements some arithmetic operations in finite fields.
 ## Implemented operations
 
 `galois-lib` implements not so many algorithms, because it is designed to be a helper library 
-for cryptographic libaries. Hence it contains only few necessary operations.
+for cryptographic libraries. Hence it contains only few necessary operations.
 
 ### Multiplication in $GF(2 ^ {8})$
 
