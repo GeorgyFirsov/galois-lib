@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">galois-lib
-   &#160;<span id="projectnumber">1.0.0</span>
+   &#160;<span id="projectnumber">1.0.1</span>
    </div>
    <div id="projectbrief">Implementation of some finite field arithmetic</div>
   </td>
@@ -90,31 +90,31 @@ $(document).ready(function(){initNavTree('gf128_8h_source.html',''); initResizab
 </div><!--header-->
 <div class="contents">
 <a href="gf128_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef GALOISLIB_GF128_INCLUDED</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define GALOISLIB_GF128_INCLUDED</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#ifndef GALOISLIB_GF128_INCLUDED</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define GALOISLIB_GF128_INCLUDED</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;emmintrin.h&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;emmintrin.h&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __cplusplus</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span> {</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __cplusplus</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;__m128i <a class="code" href="gf128_8h.html#ab15d516609384ea242c4fd053dd09dda">gf128_multiply</a>(__m128i lhs, __m128i rhs);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;__m128i <a class="code" href="gf128_8h.html#ab15d516609384ea242c4fd053dd09dda">gf128_multiply</a>(__m128i lhs, __m128i rhs);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;__m128i <a class="code" href="gf128_8h.html#a2776b4fde9e4a1425ce1b92211da214f">gf128_multiply_primitive</a>(__m128i op);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;__m128i <a class="code" href="gf128_8h.html#a2776b4fde9e4a1425ce1b92211da214f">gf128_multiply_primitive</a>(__m128i op);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __cplusplus</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// !GALOISLIB_GF128_INCLUDED</span></div>
-<div class="ttc" id="agf128_8h_html_a2776b4fde9e4a1425ce1b92211da214f"><div class="ttname"><a href="gf128_8h.html#a2776b4fde9e4a1425ce1b92211da214f">gf128_multiply_primitive</a></div><div class="ttdeci">__m128i gf128_multiply_primitive(__m128i op)</div><div class="ttdoc">Multiply element of GF(2 ^ 128) by primitive element x.</div><div class="ttdef"><b>Definition:</b> gf128.c:90</div></div>
-<div class="ttc" id="agf128_8h_html_ab15d516609384ea242c4fd053dd09dda"><div class="ttname"><a href="gf128_8h.html#ab15d516609384ea242c4fd053dd09dda">gf128_multiply</a></div><div class="ttdeci">__m128i gf128_multiply(__m128i lhs, __m128i rhs)</div><div class="ttdoc">Multiply two elements of GF(2 ^ 128).</div><div class="ttdef"><b>Definition:</b> gf128.c:35</div></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#ifdef __cplusplus</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// __cplusplus</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif  </span><span class="comment">// !GALOISLIB_GF128_INCLUDED</span></div>
+<div class="ttc" id="agf128_8h_html_a2776b4fde9e4a1425ce1b92211da214f"><div class="ttname"><a href="gf128_8h.html#a2776b4fde9e4a1425ce1b92211da214f">gf128_multiply_primitive</a></div><div class="ttdeci">__m128i gf128_multiply_primitive(__m128i op)</div><div class="ttdoc">Multiply element of GF(2 ^ 128) by primitive element x.</div><div class="ttdef"><b>Definition:</b> gf128.c:89</div></div>
+<div class="ttc" id="agf128_8h_html_ab15d516609384ea242c4fd053dd09dda"><div class="ttname"><a href="gf128_8h.html#ab15d516609384ea242c4fd053dd09dda">gf128_multiply</a></div><div class="ttdeci">__m128i gf128_multiply(__m128i lhs, __m128i rhs)</div><div class="ttdoc">Multiply two elements of GF(2 ^ 128).</div><div class="ttdef"><b>Definition:</b> gf128.c:34</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
