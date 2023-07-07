@@ -88,7 +88,24 @@ endif (NOT GALOISLIB_BUILD_LIB AND GALOISLIB_BUILD_TESTS)
 #
 set(GALOISLIB_ROOT		                        ${CMAKE_CURRENT_LIST_DIR})
 set(GALOISLIB_LIB_ROOT	                        ${GALOISLIB_ROOT}/galois-lib)
-set(GALOISLIB_INCLUDE                           ${GALOISLIB_LIB_ROOT}/include)
+
+if (PROJECT_IS_TOP_LEVEL)
+
+    #
+    # Suppress warning -- not writing PARENT_SCOPE
+    #
+
+    set(GALOISLIB_INCLUDE                       ${GALOISLIB_LIB_ROOT}/include)
+
+else (PROJECT_IS_TOP_LEVEL)
+
+    #
+    # Share public variables with parent projects
+    #
+
+    set(GALOISLIB_INCLUDE                       ${GALOISLIB_LIB_ROOT}/include PARENT_SCOPE)
+
+endif (PROJECT_IS_TOP_LEVEL)
 
 #
 # Set output directories for all targets
