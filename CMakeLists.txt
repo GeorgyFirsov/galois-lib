@@ -62,7 +62,7 @@ else (GALOISLIB_GENERATE_DOCS AND GALOISLIB_DOCS_ONLY)
         
     else (GALOISLIB_WINDOWS_BUILD)
 
-        message(STATUS "[${PROJECT_NAME}]: Non-Windows version, GALOISLIB_BUILD_KERNEL_LIB will set to OFF.")
+        message(STATUS "[${PROJECT_NAME}]: Non-Windows version, GALOISLIB_BUILD_KERNEL_LIB will be set to OFF.")
         set(GALOISLIB_BUILD_KERNEL_LIB          OFF)
 
     endif (GALOISLIB_WINDOWS_BUILD)
