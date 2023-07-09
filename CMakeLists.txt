@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(galois-lib VERSION 1.0.2)
+project(galois-lib VERSION 1.0.3)
 
 #
 # Global config
@@ -127,6 +127,8 @@ if (GALOISLIB_BUILD_LIB)
     set(GALOISLIB_INTERNAL_SOURCES_DIR                      ${GALOISLIB_SOURCES_ROOT}/details)
     set(GALOISLIB_INTERNAL_INCLUDE_DIR                      ${GALOISLIB_INCLUDE_ROOT}/details)
 
+    set(GALOISLIB_LIB_INCLUDE_DIRECTORIES                   ${GALOISLIB_INCLUDE_DIRECTORIES})
+
     #
     # Source files
     #
@@ -156,10 +158,10 @@ if (GALOISLIB_BUILD_LIB)
     #
     # Include directories
     #
-    target_include_directories(galois-lib PRIVATE           ${GALOISLIB_INCLUDE_DIRECTORIES})
+    target_include_directories(galois-lib PRIVATE           ${GALOISLIB_LIB_INCLUDE_DIRECTORIES})
 
     if (GALOISLIB_BUILD_KERNEL_LIB)
-        target_include_directories(galois-lib-km PRIVATE    ${GALOISLIB_INCLUDE_DIRECTORIES})
+        target_include_directories(galois-lib-km PRIVATE    ${GALOISLIB_LIB_INCLUDE_DIRECTORIES})
     endif (GALOISLIB_BUILD_KERNEL_LIB)
 
 
