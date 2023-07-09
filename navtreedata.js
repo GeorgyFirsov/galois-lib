@@ -25,24 +25,16 @@
 var NAVTREE =
 [
   [ "galois-lib", "index.html", [
-    [ "Implemented operations", "index.html#autotoc_md2", [
-      [ "Multiplication in $GF(2 ^ {8})$", "index.html#autotoc_md3", null ],
-      [ "multiplication in $GF(2 ^ {128})$", "index.html#autotoc_md4", null ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
+    [ "Implemented operations", "index.html#autotoc_md1", [
+      [ "Multiplication in $GF(2 ^ {8})$", "index.html#autotoc_md2", null ],
+      [ "multiplication in $GF(2 ^ {128})$", "index.html#autotoc_md3", null ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"dir_2270dc954bce2c2e13f612281cae8929.html"
+"index.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

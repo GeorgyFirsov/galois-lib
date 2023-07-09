@@ -28,7 +28,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">galois-lib
-   &#160;<span id="projectnumber">1.0.1</span>
+   &#160;<span id="projectnumber">1.0.2</span>
    </div>
    <div id="projectbrief">Implementation of some finite field arithmetic</div>
   </td>
@@ -90,15 +90,15 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_README"></a> This library implements some arithmetic operations in finite fields.</p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md1"></a>
 Implemented operations</h1>
 <p><code>galois-lib</code> implements not so many algorithms, because it is designed to be a helper library for cryptographic libraries. Hence it contains only few necessary operations.</p>
-<h2><a class="anchor" id="autotoc_md3"></a>
+<h2><a class="anchor" id="autotoc_md2"></a>
 Multiplication in $GF(2 ^ {8})$</h2>
 <p>Multiplication in finite field of size $2 ^ {8}$ is implemented using precomputed logarithm and exponents tables. It works according to the following obvious formula:</p>
 <p>$$ a \cdot b = \exp \left( \log a + \log b \right), $$</p>
 <p>where all operations are assumed to be in the finite field.</p>
-<h2><a class="anchor" id="autotoc_md4"></a>
+<h2><a class="anchor" id="autotoc_md3"></a>
 multiplication in $GF(2 ^ {128})$</h2>
 <p>Multiplication in $GF(2 ^ {128})$ is implemented using some kind of Karatsuba algorithm with help of <code>pclmulqdq</code> instruction. More information here: <a href="https://www.intel.com/content/dam/develop/external/us/en/documents/clmul-wp-rev-2-02-2014-04-20.pdf">Intel® Carry-Less Multiplication Instruction and its Usage for Computing the GCM Mode</a>. </p>
 </div></div><!-- PageDoc -->
