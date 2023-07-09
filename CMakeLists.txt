@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(galois-lib VERSION 1.0.1)
+project(galois-lib VERSION 1.0.2)
 
 #
 # Global config
