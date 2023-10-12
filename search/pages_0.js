@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['galois_2dlib_1',['galois-lib',['../index.html',1,'']]]
+  ['galois_2dlib_21',['galois-lib',['../index.html',1,'']]]
 ];
